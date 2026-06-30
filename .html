@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinayagam Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+color:white;
+overflow-x:hidden;
+background:black;
+}
+
+video{
+position:fixed;
+right:0;
+bottom:0;
+min-width:100%;
+min-height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
+z-index:-1;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:20px;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+}
+
+h1{
+font-size:55px;
+}
+
+h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+p{
+max-width:700px;
+line-height:1.8;
+font-size:18px;
+}
+
+.btn{
+margin-top:25px;
+padding:15px 35px;
+background:#00e5ff;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+}
+
+.card{
+width:320px;
+padding:25px;
+background:rgba(255,255,255,.12);
+border-radius:20px;
+backdrop-filter:blur(15px);
+margin:15px;
+}
+
+.projects{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:rgba(0,0,0,.5);
+}
+</style>
+
+</head>
+<video autoplay muted loop playsinline>
+    <source src="c:\Users\monish\Downloads\mixkit-overhead-view-of-a-rocky-coast-and-waves-crashing-51502-hd-ready.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <img src="c:\Users\monish\Downloads\WhatsApp Image 2026-06-29 at 2.44.11 PM.jpeg" class="profile-pic" alt="Vinayagam">
+    <body>
+        <div id="intro">
+    <h1>WELCOME</h1>
+    <h2>Vinayagam Portfolio</h2>
+</div>
+        
+<h1>Hi, I'm Vinayagam</h1>
+<p>Creative Web Developer | UI Designer | Java Programmer</p>
+<a href="#projects" class="btn">View Projects</a>
+</section>
+
+<h2>About Me</h2>
+
+<p>
+Hi, I'm <b>Vinayagam</b>, a passionate Computer Science student.
+I'm currently pursuing my degree and have a strong interest in Web Development,
+Java Programming, and UI/UX Design. I enjoy building modern websites,
+learning new technologies, and creating creative projects that solve real-world problems.
+My goal is to become a skilled Full Stack Developer.
+</p>
+</section>
+
+<section id="projects">
+<h2>My Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Modern responsive portfolio with video background.</p>
+</div>
+
+<div class="card">
+<h3>Weather App</h3>
+<p>Weather forecast application using API.</p>
+</div>
+
+<div class="card">
+<h3>Music Player</h3>
+<p>Beautiful music player with playlist support.</p>
+</div>
+
+<div class="card">
+<h3>College Management</h3>
+<p>Java Swing project with login and database.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email : vinayagam@email.com</p>
+<p>Phone : +91 9876543210</p>
+<a href="#" class="btn">Download Resume</a>
+</section>
+
+<footer>
+© 2026 Vinayagam Portfolio
+</footer>
+
+<div class="cursor"></div>
+
+<script>
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
+</script>
+<script>
+setTimeout(function(){
+    document.getElementById("intro").style.display="none";
+},3000);
+</script>
+</body>
+</html>
